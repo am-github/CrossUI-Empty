@@ -91,7 +91,21 @@ xui.Class('App', 'xui.Module',{
                 .setDirtyMark(false)
                 .setLeft("4.166666666666667em")
                 .setTop("1.6666666666666667em")
-                .setCaption("Button"),
+                .setCaption("Button")
+                .onClick([
+                    {
+                        "desc":"Action 1",
+                        "type":"page",
+                        "target":"App.Tabs23",
+                        "args":[
+                            undefined,
+                            "{page.xui_ui_tabs4}",
+                            "b"
+                        ],
+                        "method":"show",
+                        "event":1
+                    }
+                ]),
                 "before"
             );
             
