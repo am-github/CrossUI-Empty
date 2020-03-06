@@ -55,37 +55,6 @@ xui.Class('App', 'xui.Module',{
             );
             
             host.xui_ui_layout7.append(
-                xui.create("xui.UI.Tabs")
-                .setHost(host,"xui_ui_tabs4")
-                .setItems([
-                    {
-                        "id":"a",
-                        "caption":"page1",
-                        "imageClass":"xui-icon-xui"
-                    },
-                    {
-                        "id":"b",
-                        "caption":"page2"
-                    },
-                    {
-                        "id":"c",
-                        "caption":"page3"
-                    },
-                    {
-                        "id":"d",
-                        "caption":"page4",
-                        "closeBtn":true,
-                        "optBtn":"xui-uicmd-opt",
-                        "popBtn":true
-                    }
-                ])
-                .setLeft("0em")
-                .setTop("0em")
-                .setValue("a"),
-                "main"
-            );
-            
-            host.xui_ui_layout7.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button3")
                 .setDirtyMark(false)
@@ -96,11 +65,11 @@ xui.Class('App', 'xui.Module',{
                     {
                         "desc":"Action 1",
                         "type":"page",
-                        "target":"App.Tabs23",
+                        "target":"App.TreeView27",
                         "args":[
                             undefined,
-                            "{page.xui_ui_tabs4}",
-                            "b"
+                            "{page.xui_ui_layout7}",
+                            "main"
                         ],
                         "method":"show",
                         "event":1
