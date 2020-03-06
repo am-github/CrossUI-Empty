@@ -64,8 +64,8 @@ xui.Class('App', 'xui.Module',{
                 .onClick([
                     {
                         "desc":"Action 1",
-                        "type":"page",
-                        "target":"App.TreeView27",
+                        "type":"control",
+                        "target":"xui_ui_button3",
                         "args":[
                             undefined,
                             "{page.xui_ui_layout7}",
